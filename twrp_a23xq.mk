@@ -24,8 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common PBRP stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/a23xq/device.mk)
@@ -38,7 +38,7 @@ DEVICE_PATH := device/samsung/a23xq
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := twrp_a23xq
 PRODUCT_DEVICE := a23xq
-PRODUCT_MODEL := SM-A236B
+PRODUCT_MODEL := SM-A236E
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
